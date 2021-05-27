@@ -24,7 +24,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 withMaven() {
-                    sh 'mvn spring-boot:run -Drun.arguments="spring.profiles.active=test"'
+                    sh 'mvn spring-boot:run -Drun.arguments="spring.profiles.active=mysql"'
                 }
             }
         }
