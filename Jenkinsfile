@@ -24,7 +24,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 withMaven() {
-                    sh 'mvn deploy'
+                    sh 'mvn spring-boot:run'
                 }
             }
         }
