@@ -59,9 +59,9 @@ logging:
 
     datasource:
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://<your_mysql_host_or_ip>/bootexample
-      username: <your_mysql_username>
-      password: <your_mysql_password>
+      url: jdbc:mysql://localhost:3306/bootexample
+      username: admin
+      password: password
 
     jpa:
       hibernate:
